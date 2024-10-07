@@ -66,7 +66,7 @@ nav ul li a:hover {
 
 /* Hero Section Styling */
 .hero {
-    background-image: url('background-image.jpg.png'); /* Replace with your background image */
+    background-image: url('your-background-image.jpg.png'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     height: 100vh; /* Full height */
