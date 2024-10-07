@@ -1,0 +1,205 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fef5f8;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff6b81; /* Love-themed soft pink-red color */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 60px; /* Adjust size to fit your design */
+    width: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe1e5; /* Slightly lighter shade for hover effect */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('background-image.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* White text for contrast */
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1; /* Ensures text is above the background */
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Slight shadow for readability */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button,
+.secondary-cta {
+    background-color: #ff6b81; /* Love-themed color */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover,
+.secondary-cta:hover {
+    background-color: #ffe1e5; /* Light pink on hover */
+}
+
+/* Hero Images Styling */
+.hero-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.memory-image {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Maintain aspect ratio */
+    margin: 0 10px;
+    border-radius: 10px; /* Soft rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.memory-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-button,
+    .secondary-cta {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .memory-image {
+        width: 60px; /* Smaller images for mobile */
+        height: 60px;
+    }
+}
+
+/* About Us Section Styling */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff; /* White background for contrast */
+    color: #333; /* Dark text for readability */
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6b81; /* Love-themed color */
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px; /* Limit width for readability */
+}
+
+.about-image {
+    margin-top: 20px;
+}
+
+#about-us-image {
+    width: 100%; /* Responsive image */
+    max-width: 600px; /* Limit maximum size */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .about p {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+
+    #about-us-image {
+        max-width: 90%; /* Full width with padding */
+    }
+}
