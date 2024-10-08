@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories</title>
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     
@@ -14,19 +14,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Love Memories</title>
-</head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="container">
             <!-- Logo -->
             <div class="logo">
-                <img src="your-logo.png.png" alt="Logo" id="header-logo">
+                <img src="your-logo.png" alt="Logo" id="header-logo">
             </div>
 
             <!-- Navigation Menu -->
@@ -38,172 +32,89 @@
             </nav>
         </div>
     </header>
-</body>
-</html>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome, my dear princess<3</h1>
-        <p>I created this website to locate our memories (;</p>
-        <a href="#" class="cta-button">Log in</a>
-        <a href="#about" class="secondary-cta"></a>
-    </div>
-    <div class="hero-images">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome, my dear princess <3</h1>
+            <p>I created this website to locate our memories (;</p>
+            <a href="#" class="cta-button">Log in</a>
+            <a href="#about" class="secondary-cta">Explore Memories</a>
+        </div>
+    </section>
 
-    </div>
-</section>
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>2024.10.10</h2>
+            <p>I know it was hard to... regret... love you etc</p>
+        </div>
+        <div class="about-image">
+            <img src="your-image.jpg" alt="Us Together" id="about-us-image">
+        </div>
+    </section>
 
-
-<!-- About Us Section -->
-<section class="about" id="about">
-    <div class="about-content">
-        <h2>2024.10.10</h2>
-        <p>I know it was hard to... regret... love you etc</p>
-    </div>
-    <div class="about-image">
-        <img src="your-image.jpg.png" alt="Us Together" id="about-us-image"> <!-- Replace with your image -->
-    </div>
-</section>
-
-<!-- Login Page Section -->
-<section class="login-section">
-    <div class="login-container">
-        <h2>Login</h2>
-        <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <div class="input-group">
-                <button type="submit" class="btn-login">Login</button>
-            </div>
-            <p class="forgot-password"><a href="#">Forgot your password?</a></p>
-            <p id="error-message" class="error-message"></p>
-        </form>
-    </div>
-</section>
-
-<script>
-    // JavaScript to validate login credentials
-    function validateLogin() {
-        // Set the valid username and password
-        const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
-        const validPassword = "20070819";
-
-        // Get the entered username and password
-        const enteredUsername = document.getElementById('username').value;
-        const enteredPassword = document.getElementById('password').value;
-
-        // Validate credentials
-        if (enteredUsername === validUsername && enteredPassword === validPassword) {
-            alert("Login successful!");
-            return true; // Allow form submission
-        } else {
-            document.getElementById('error-message').textContent = "Invalid username or password!";
-            return false; // Prevent form submission
-        }
-    }
-</script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memories</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                text-align: center;
-                padding: 50px;
-            }
-            .login-form {
-                display: inline-block;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                background-color: #f9f9f9;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Login to Your Account</h1>
-        <div class="login-form">
-            <form id="loginForm">
-                <input type="text" id="username" placeholder="Username" required><br><br>
-                <input type="password" id="password" placeholder="Password" required><br><br>
-                <button type="submit">Login</button>
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+                <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+                <p id="error-message" class="error-message"></p>
             </form>
-            <p id="error-message" style="color: red;"></p>
         </div>
-    
-        <script>
-            // Simulating a simple login
-            const loginForm = document.getElementById('loginForm');
-            loginForm.addEventListener('submit', function (event) {
-                event.preventDefault(); // Prevents the form from submitting the traditional way
-    
-                const username = document.getElementById('username').value;
-                const password = document.getElementById('password').value;
-    
-                // Simple validation (In a real scenario, this will be done with server-side logic)
-                if (username === 'user' && password === 'password') {
-                    window.location.href = 'dashboard.html'; // Redirect to the dashboard page
-                } else {
-                    document.getElementById('error-message').textContent = 'Invalid username or password';
-                }
-            });
-        </script>
-    </body>
-    </html>
-    
+    </section>
 
-<!-- Memories Page Section -->
-<section class="memories-section">
-    <h2>Our Memories</h2>
-    <div class="memories-container">
-        <!-- Memory 1 -->
-        <div class="memory-item">
-            <img src="memory1.jpg" alt="Memory 1" class="memory-image"> <!-- Replaceable image -->
-            <div class="memory-title">First Date</div>
+    <!-- Memories Section -->
+    <section class="memories-section">
+        <h2>Our Memories</h2>
+        <div class="memories-container">
+            <div class="memory-item">
+                <img src="memory1.jpg" alt="Memory 1" class="memory-image">
+                <div class="memory-title">First Date</div>
+            </div>
+            <div class="memory-item">
+                <img src="memory2.jpg" alt="Memory 2" class="memory-image">
+                <div class="memory-title">Vacation Trip</div>
+            </div>
+            <div class="memory-item">
+                <video controls class="memory-video">
+                    <source src="memory_video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="memory-title">Surprise Birthday Video</div>
+            </div>
         </div>
+    </section>
 
-        <!-- Memory 2 -->
-        <div class="memory-item">
-            <img src="memory2.jpg" alt="Memory 2" class="memory-image"> <!-- Replaceable image -->
-            <div class="memory-title">Vacation Trip</div>
-        </div>
+    <script>
+        function validateLogin() {
+            const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
+            const validPassword = "20070819";
 
-        <!-- Memory 3 -->
-        <div class="memory-item">
-            <video controls class="memory-video">
-                <source src="memory_video1.mp4" type="video/mp4"> <!-- Replaceable video -->
-                Your browser does not support the video tag.
-            </video>
-            <div class="memory-title">Surprise Birthday Video</div>
-        </div>
+            const enteredUsername = document.getElementById('username').value;
+            const enteredPassword = document.getElementById('password').value;
 
-        <!-- Add more memories as needed -->
-    </div>
-</section>
-
+            if (enteredUsername === validUsername && enteredPassword === validPassword) {
+                alert("Login successful!");
+                window.location.href = 'dashboard.html';  // Redirect to dashboard
+                return true;
+            } else {
+                document.getElementById('error-message').textContent = "Invalid username or password!";
+                return false;
+            }
+        }
+    </script>
 </body>
 </html>
-
