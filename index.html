@@ -55,6 +55,27 @@
         <img src="small-image4.png.HEIC" alt="Memory 3" class="memory-image">
     </div>
 </section>
+/* Hero Images Styling */
+.hero-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Ensures images wrap nicely if there are many */
+}
+
+.memory-image {
+    width: 150px; /* Adjust to desired width */
+    height: auto;  /* Auto height to maintain aspect ratio */
+    margin: 10px;  /* Adds space between images */
+    border-radius: 10px; /* Soft rounded corners */
+    object-fit: cover;  /* Ensures images are cropped nicely */
+    transition: transform 0.3s ease;
+}
+
+.memory-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
 
 <!-- About Us Section -->
 <section class="about" id="about">
