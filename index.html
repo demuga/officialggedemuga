@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memories</title>
-
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
+    
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Love Memories</title>
+</head>
 <body>
     <!-- Header Section -->
     <header>
@@ -34,120 +38,120 @@
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome, my dear princess &lt;3</h1>
-            <p>I created this website to locate our memories (;</p>
-            <a href="#" class="cta-button">Log in</a>
-            <a href="#about" class="secondary-cta">Learn more</a>
-        </div>
-        <div class="hero-images">
-            <img src="small-image2.png.jpg" alt="Memory 1" class="memory-image">
-            <img src="small-image3.png.png" alt="Memory 2" class="memory-image">
-            <img src="small-image4.png.HEIC" alt="Memory 3" class="memory-image">
-        </div>
-    </section>
-/* Hero Images Styling */
-.hero-images {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Ensures images wrap nicely if there are many */
-}
-
-.memory-image {
-    width: 150px; /* Adjust to desired width */
-    height: auto;  /* Auto height to maintain aspect ratio */
-    margin: 10px;  /* Adds space between images */
-    border-radius: 10px; /* Soft rounded corners */
-    object-fit: cover;  /* Ensures images are cropped nicely */
-    transition: transform 0.3s ease;
-}
-
-.memory-image:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-    <!-- About Us Section -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2>2024.10.10</h2>
-            <p>I know it was hard to... regret... love you, etc.</p>
-        </div>
-        <div class="about-image">
-            <img src="your-image.jpg.png" alt="Us Together" id="about-us-image">
-        </div>
-    </section>
-
-    <!-- Login Page Section -->
-    <section class="login-section">
-        <div class="login-container">
-            <h2>Login</h2>
-            <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-                <div class="input-group">
-                    <button type="submit" class="btn-login">Login</button>
-                </div>
-                <p class="forgot-password"><a href="#">Forgot your password?</a></p>
-                <p id="error-message" class="error-message"></p>
-            </form>
-        </div>
-    </section>
-
-    <!-- Memories Page Section -->
-    <section class="memories-section">
-        <h2>Our Memories</h2>
-        <div class="memories-container">
-            <!-- Memory 1 -->
-            <div class="memory-item">
-                <img src="memory1.jpg" alt="Memory 1" class="memory-image">
-                <div class="memory-title">First Date</div>
-            </div>
-
-            <!-- Memory 2 -->
-            <div class="memory-item">
-                <img src="memory2.jpg" alt="Memory 2" class="memory-image">
-                <div class="memory-title">Vacation Trip</div>
-            </div>
-
-            <!-- Memory 3 -->
-            <div class="memory-item">
-                <video controls class="memory-video">
-                    <source src="memory_video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="memory-title">Surprise Birthday Video</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- JavaScript -->
-    <script>
-        function validateLogin() {
-            const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
-            const validPassword = "20070819";
-
-            const enteredUsername = document.getElementById('username').value;
-            const enteredPassword = document.getElementById('password').value;
-
-            if (enteredUsername === validUsername && enteredPassword === validPassword) {
-                alert("Login successful!");
-                return true;
-            } else {
-                document.getElementById('error-message').textContent = "Invalid username or password!";
-                return false;
-            }
-        }
-    </script>
 </body>
-
 </html>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome, my dear princess<3</h1>
+        <p>I created this website to locate our memories (;</p>
+        <a href="#" class="cta-button">Log in</a>
+        <a href="#about" class="secondary-cta"></a>
+    </div>
+    <div class="hero-images">
+
+    </div>
+</section>
+
+
+<!-- About Us Section -->
+<section class="about" id="about">
+    <div class="about-content">
+        <h2>2024.10.10</h2>
+        <p>I know it was hard to... regret... love you etc</p>
+    </div>
+    <div class="about-image">
+        <img src="your-image.jpg.png" alt="Us Together" id="about-us-image"> <!-- Replace with your image -->
+    </div>
+</section>
+
+<!-- Login Page Section -->
+<section class="login-section">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <button type="submit" class="btn-login">Login</button>
+            </div>
+            <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+            <p id="error-message" class="error-message"></p>
+        </form>
+    </div>
+</section>
+
+<script>
+    // JavaScript to validate login credentials
+    function validateLogin() {
+        // Set the valid username and password
+        const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
+        const validPassword = "20070819";
+
+        // Get the entered username and password
+        const enteredUsername = document.getElementById('username').value;
+        const enteredPassword = document.getElementById('password').value;
+
+        // Validate credentials
+        if (enteredUsername === validUsername && enteredPassword === validPassword) {
+            alert("Login successful!");
+            return true; // Allow form submission
+        } else {
+            document.getElementById('error-message').textContent = "Invalid username or password!";
+            return false; // Prevent form submission
+        }
+    }
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Memories Page Section -->
+<section class="memories-section">
+    <h2>Our Memories</h2>
+    <div class="memories-container">
+        <!-- Memory 1 -->
+        <div class="memory-item">
+            <img src="memory1.jpg" alt="Memory 1" class="memory-image"> <!-- Replaceable image -->
+            <div class="memory-title">First Date</div>
+        </div>
+
+        <!-- Memory 2 -->
+        <div class="memory-item">
+            <img src="memory2.jpg" alt="Memory 2" class="memory-image"> <!-- Replaceable image -->
+            <div class="memory-title">Vacation Trip</div>
+        </div>
+
+        <!-- Memory 3 -->
+        <div class="memory-item">
+            <video controls class="memory-video">
+                <source src="memory_video1.mp4" type="video/mp4"> <!-- Replaceable video -->
+                Your browser does not support the video tag.
+            </video>
+            <div class="memory-title">Surprise Birthday Video</div>
+        </div>
+
+        <!-- Add more memories as needed -->
+    </div>
+</section>
+
+</body>
+</html>
+
