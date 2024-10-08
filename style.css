@@ -473,4 +473,52 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 }
+/* Global Typography Settings */
+body {
+    font-family: 'Poppins', sans-serif; /* Clean sans-serif for body text */
+    color: #333;
+    background-color: #fff5f5; /* Subtle pinkish background for love theme */
+}
+
+/* Romantic and Elegant Headers */
+h1, h2, h3, h4 {
+    font-family: 'Dancing Script', cursive; /* Handwritten romantic font for headers */
+    color: #ff6b81; /* Love-themed color */
+    font-weight: 700;
+}
+
+p, a, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Example Icons for Flair */
+.memory-title::before {
+    content: "\f004"; /* Heart icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #ff6b81;
+}
+
+/* Icon Flair in Other Places (Optional) */
+.icon-heart {
+    color: #ff6b81;
+    margin-left: 8px;
+}
+
+.forgot-password a::before {
+    content: "\f308"; /* Envelope with heart */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+    color: #ff6b81;
+}
+
+/* Extra Icon Example: For Buttons */
+.btn-login::before {
+    content: "\f1d8"; /* Heart icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
 
