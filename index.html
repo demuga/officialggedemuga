@@ -58,7 +58,7 @@
     <section class="login-section">
         <div class="login-container">
             <h2>Login</h2>
-            <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
+            <form id="loginForm" class="login-form" onsubmit="validateLogin(event)">
                 <div class="input-group">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" placeholder="Enter your username" required>
@@ -99,7 +99,9 @@
     </section>
 
     <script>
-        function validateLogin() {
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form from submitting
+
             const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
             const validPassword = "20070819";
 
@@ -109,10 +111,8 @@
             if (enteredUsername === validUsername && enteredPassword === validPassword) {
                 alert("Successful :)");
                 window.location.href = 'dashboard.html';  // Redirect to dashboard
-                return true;
             } else {
                 document.getElementById('error-message').textContent = "Invalid username or password!";
-                return false;
             }
         }
     </script>
