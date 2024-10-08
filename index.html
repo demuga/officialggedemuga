@@ -87,14 +87,24 @@
 </head>
 <body>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
 <!-- Login Page Section -->
 <section class="login-section">
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#" method="post" class="login-form">
+        <form id="loginForm" class="login-form" onsubmit="return validateLogin()">
             <div class="input-group">
-                <label for="email">Email or Username</label>
-                <input type="text" id="email" name="email" placeholder="Enter your email or username" required>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
             </div>
             <div class="input-group">
                 <label for="password">Password</label>
@@ -104,9 +114,32 @@
                 <button type="submit" class="btn-login">Login</button>
             </div>
             <p class="forgot-password"><a href="#">Forgot your password?</a></p>
+            <p id="error-message" class="error-message"></p>
         </form>
     </div>
 </section>
+
+<script>
+    // JavaScript to validate login credentials
+    function validateLogin() {
+        // Set the valid username and password
+        const validUsername = "theprettiestandmostgorgeousbeautifulelegantlovelysweetadorablelovingcaringdazzlingcaptivatingbreathtakingattractivestunningalluringcharmingintelligentgirlinthewholeworld";
+        const validPassword = "20070819";
+
+        // Get the entered username and password
+        const enteredUsername = document.getElementById('username').value;
+        const enteredPassword = document.getElementById('password').value;
+
+        // Validate credentials
+        if (enteredUsername === validUsername && enteredPassword === validPassword) {
+            alert("Login successful!");
+            return true; // Allow form submission
+        } else {
+            document.getElementById('error-message').textContent = "Invalid username or password!";
+            return false; // Prevent form submission
+        }
+    }
+</script>
 
 </body>
 </html>
