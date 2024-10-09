@@ -21,21 +21,22 @@
             text-align: center;
             background-color: #2c2c2e; /* Slightly lighter dark color for contrast */
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+            max-width: 900px;
             width: 100%;
+            position: relative;
         }
 
         h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
             color: #ff6b6b; /* Accent color for the title */
         }
 
         p {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
             color: #e0e0e0; /* Lighter text color */
         }
 
@@ -44,22 +45,47 @@
             width: 100%;
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
-        .video-wrapper iframe,
         .video-wrapper video {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 8px;
-            border: 2px solid #ff6b6b; /* Light border for video */
+            border-radius: 12px;
+            border: 3px solid #ff6b6b; /* Light border for video */
+        }
+
+        .clipart {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+        }
+
+        .clipart.top-left {
+            top: -40px;
+            left: -40px;
+        }
+
+        .clipart.top-right {
+            top: -40px;
+            right: -40px;
+        }
+
+        .clipart.bottom-left {
+            bottom: -40px;
+            left: -40px;
+        }
+
+        .clipart.bottom-right {
+            bottom: -40px;
+            right: -40px;
         }
 
         .memory-title {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             font-weight: 500;
             color: #ff6b6b; /* Accent color for the memory title */
         }
@@ -76,6 +102,12 @@
             <source src="your-memory-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+
+        <!-- Cliparts -->
+        <img src="clipart1.png" alt="Clipart 1" class="clipart top-left">
+        <img src="clipart2.png" alt="Clipart 2" class="clipart top-right">
+        <img src="clipart3.png" alt="Clipart 3" class="clipart bottom-left">
+        <img src="clipart4.png" alt="Clipart 4" class="clipart bottom-right">
     </div>
 
     <div class="memory-title">im sorry</div>
